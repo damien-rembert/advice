@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 function App() {
 
   const [advice, setAdvice] = useState("");
-  const [error, setError] = useState("");
+  const [error, setError] = useState({error: false, message:''});
 
   const collect = async () => {
 
